@@ -70,6 +70,8 @@ public class PreWorkAssignment1
 
   public void printPattern(int y) 
   {
+    if(y>=1)
+    {
     for (int i = y; i >= 1; i--) // decrementing the level
     {
       for (int j = i; j >= 1; j--) // calculating the number of * at each level
@@ -78,6 +80,9 @@ public class PreWorkAssignment1
       }
       System.out.println(' '); // printing new line
     }
+  }
+    else
+      System.out.println("Not a Valid Selection for Printing Pattern"); // printing new line
   }
 
   public void checkPrimeNumber(int z) 
